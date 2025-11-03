@@ -1,0 +1,25 @@
+  <div class="card">
+            <div class="box-img"><img [src]="project?.imgUrl" alt={{project?.title}} class="img-box"></div>
+            <div class="text-box">
+                <h3>{{project?.title}}</h3>
+                <p>{{project?.shortDesc}}</p>
+                    <ul class="hash-tags">
+                        <li>#FullStackDeveloper</li>
+                        <li>#DotNetDeveloper</li>
+                        <li>#AngularDeveloper</li>
+                        <li>#FrontendDeveloper</li>
+                        <li>#SoftwareDeveloper</li>
+                        <li>#WebDevelopment</li>
+                    </ul>
+
+                    <div class="divider"></div>
+
+                    <div class="links">
+                        <div class="buttons">
+                            <a  [routerLink]="['/projects/details', project?.id]"><button class="btn liveDemo"><i class="fa-solid fa-link"></i>Demo</button></a>
+                            <a href={{project?.gitHubLink}}><button class="btn gitHub"><i class="fa-brands fa-github"></i>GitHub</button></a>
+                        </div>
+                        <div class="vid buttons"><a  [routerLink]="['/projects/details', project?.id]"><button class="btn vidBtn"><i class="fa-solid fa-video"></i>Video</button></a></div>
+                    </div>
+            </div>
+        </div>

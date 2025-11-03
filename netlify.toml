@@ -1,0 +1,8 @@
+[build]
+  command = "npm install && ng build --configuration=production"
+  publish = "dist/nsm" # change this to your actual dist folder name
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

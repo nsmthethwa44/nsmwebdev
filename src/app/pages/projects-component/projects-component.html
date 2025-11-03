@@ -1,0 +1,18 @@
+<div class="all-projects">
+     <div class="wrapper">
+          <div class="content">
+               <div class="projects">
+                    <div class="title">
+                         <h3>Featured Projects</h3>
+                         <span>Showing awesome projects</span>
+                    </div>
+
+                    <div class="projects-container">
+                         <app-project-card *ngFor="let item of projectSer.projects" [project]="item"></app-project-card>
+                    </div>
+               </div>
+          </div>
+
+          <app-right-sidebar></app-right-sidebar>
+     </div>
+</div>
