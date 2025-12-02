@@ -1,0 +1,28 @@
+<section id="faqs" class="faqs section">
+  <div class="container">
+    <div class="text-box">
+                            <h2>Common Questions</h2>
+                                <h3><span>Quick answers about how I work, my process, tools, and development approach.</span></h3>
+                              <div class="separator"></div>
+                        </div>
+
+
+                          <div class="faqs-container">
+    <div class="faq-card scroll-up" *ngFor="let faq of faqs" (click)="toggleFaq(faq)">
+      <div class="faq-question">
+        <span class="question">{{ faq.question }}</span>
+        <span class="toggle-icon">{{ faq.open ? '➖' : '➕' }}</span>
+      </div>
+      <div class="faq-answer" [class.open]="faq.open">
+        <p>{{ faq.answer }}</p>
+      </div>
+      <!-- <div class="faq-particles">
+        <span *ngFor="let n of [1,2,3]" class="particle"></span>
+      </div> -->
+    </div>
+  </div>
+
+  </div>
+
+
+</section>

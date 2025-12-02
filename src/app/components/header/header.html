@@ -1,11 +1,40 @@
      <header class="header">
-        <div class="container">
-            <div class="menu" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
-
-            <div class="user">
-                <div class="mode"><i class="fa-solid fa-moon"></i></div>
-                <div class="box-img"><img src="assets\img\Nkululeko Mthethwa.jpeg" alt="Nkululeko photo" class="img-box"></div>
-                
+       <div class="container">
+            <div class="logo">
+                <a href="#"><h2>Nsm<span>Web</span>Dev</h2></a>
             </div>
-        </div>
+
+            <div class="navbar" [class.active] ="isNavBarOpen">
+                <ul class="nav">
+                    <li><a href="#home" (click)="closeNavbar(); setActive('home')" [class.active]="activeSection === 'home'">Home</a></li>
+                    <li><a href="#about" (click)="closeNavbar(); setActive('about')" [class.active]="activeSection === 'about'">About</a></li>
+                    <li><a href="#services" (click)="closeNavbar(); setActive('services')" [class.active]="activeSection === 'services'">Services</a></li>
+                    <li><a href="#projects" (click)="closeNavbar(); setActive('projects')" [class.active]="activeSection === 'projects'">Projects</a></li>
+                    <li><a href="#resume" (click)="closeNavbar(); setActive('resume')" [class.active]="activeSection === 'resume'">Education</a></li>
+                    <li><a href="#faqs" (click)="closeNavbar(); setActive('faqs')" [class.active]="activeSection === 'faqs'">FAQs</a></li>
+                     <li><a href="#contact" (click)="closeNavbar(); setActive('contact')" [class.active]="activeSection === 'contact'">Contact</a></li>
+                </ul>
+            </div>
+
+                <div class="user">
+                    <div class="mode-menu">
+                        <div class="mode"><div class="icon">🌜</div></div>
+                        <div class="menu" (click)="toggleNavBar()">
+                            @if (isNavBarOpen === false) {
+                                <i class="fa-solid fa-bars"></i>
+                            }@else {
+                                <i class="fa-solid fa-xmark"></i>
+                            }
+                        </div>
+                    </div>
+
+                <div class="hire">
+                    <h3><a href="" class="call-link"><div class="icon">📞</div> 079 565 4665</a></h3>
+                    <div class="buttons">
+                        <a href="#contact"><button class="btn">What if I join You</button></a>
+                    </div>
+                </div>
+            </div>
+
+       </div>
  </header>

@@ -1,0 +1,22 @@
+ <section class="section wrapper work" id='projects'>
+            <div class="container">
+                
+                <div class="title">
+                    <div class="text">
+                        <div class="text-box">
+                            <h2>Systems I've Built</h2>
+                            <h3>Real applications I’ve delivered using .NET, Angular, and SQL.</h3>
+                        </div>
+                    
+                    </div>
+                     <div  class="text-divider"></div>
+                </div>
+
+                <div class="content">
+                    <div class="projects-box">
+                       <app-project-card *ngFor="let item of projects" [project]="item"></app-project-card>
+                    </div>
+                </div>
+
+        </div>
+    </section>

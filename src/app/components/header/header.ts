@@ -1,18 +1,28 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { SidebarService } from '../../services/sidebar-service';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
 export class Header {
-constructor(private sidebarSer: SidebarService){}
+  isNavBarOpen = false;
+  activeSection: string = 'home';
 
-toggleSidebar(){
-  this.sidebarSer.toggleSidebar();
+  toggleNavBar() {
+    this.isNavBarOpen = !this.isNavBarOpen;
+  }
+
+  closeNavbar() {
+    this.isNavBarOpen = false;
+  }
+
+  // when nav link is clicked add active class
+// remove current active class
+setActive(section: string) {
+  this.activeSection = section;
 }
-
 
 }
