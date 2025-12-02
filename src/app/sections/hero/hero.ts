@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Hero  {
 images = [
-  'assets/img/Framework_30px.png',
+  'assets/img/visual_studio_30px.png',
   'assets/img/angularjs_30px.png',
   'assets/img/c_sharp_logo_2_30px.png',
   'assets/img/javascript_30px.png',
