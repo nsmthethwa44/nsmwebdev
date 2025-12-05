@@ -24,5 +24,4 @@ export class Header {
 setActive(section: string) {
   this.activeSection = section;
 }
-
 }
