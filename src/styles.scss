@@ -11,7 +11,7 @@
 // tools
 @font-face {
     font-family: --headings ;
-    src: url(./assets/fonts/MochiyPopOne-Regular.ttf);
+    src: url(./assets/fonts/Mochiy-Regular.ttf);
 }
 @font-face {
     font-family: --text ;
@@ -318,7 +318,7 @@ span{
               text-transform: uppercase;
                  font-style: italic;
                  font-size: var(--h2fs) !important;
-                text-shadow: 0  0  10px  var(--text-primary);
+                text-shadow: 0  0  5px  var(--text-primary);
 
             }
           }
@@ -447,7 +447,7 @@ span{
                 line-height: 1;
                 text-transform: uppercase;
                 font-style: italic;
-                text-shadow: 0  0  10px  var(--text-primary);
+                text-shadow: 0  0  5px  var(--text-primary);
                 
             }
 
@@ -1482,7 +1482,7 @@ span{
                     h2{
                          font-size: var(--h2fs) !important;
                          font-style: italic;
-                text-shadow: 0  0  10px  var(--text-primary);
+                text-shadow: 0  0  5px  var(--text-primary);
                     }
                 }
 
