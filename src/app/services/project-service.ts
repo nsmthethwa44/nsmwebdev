@@ -8,12 +8,12 @@ export class ProjectService {
     projects = [
   {
   id: 1,
-  title: "EstateFlow System – Angular, ASP.NET Core, SQL Server",
+  title: "Real Estate System – Angular, ASP.NET Core, SQL Server",
   category: "Real Estate Management",
   shortDesc: "A full-stack real estate management platform enabling admins, sellers, and buyers to efficiently manage property listings, offers, and deals using Angular, ASP.NET Core, and SQL Server.",
   imgUrl: "assets/img/EstateFlow System – Angular, ASP.NET Core, SQL Server.png",
   desc: "EstateFlow is a comprehensive real estate management system built with ASP.NET Core Web API, Angular 20, and SQL Server. The platform provides a seamless workflow for managing property listings, offers, approvals, and closed deals. Designed using clean architecture and SOLID principles, EstateFlow ensures maintainability, scalability, and clear separation of concerns across services, repositories, and controller layers. With robust authentication and role-based access control (RBAC), admins, sellers, and buyers interact with the system through tailored dashboards and permissions. This architecture supports an efficient, secure, and modern approach to real estate operations.",
-  liveDemo: "https://estateflowsystem-gvaveyhdduhhezhx.canadacentral-01.azurewebsites.net/",
+  liveDemo: "https://estateflowsystem.netlify.app/",
   images: {
     img1: "assets/img/estateflow-1.png",
     img2: "assets/img/estateflow-2.png",
