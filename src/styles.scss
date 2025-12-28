@@ -362,7 +362,7 @@ span{
               text-transform: uppercase;
                  font-style: italic;
                  font-size: var(--h2fs) !important;
-                text-shadow: 0  0  5px  var(--text-primary);
+                // text-shadow: 0  0  5px  var(--text-primary);
 
             }
           }
@@ -2071,6 +2071,84 @@ span{
         opacity: 1;
        }
     }
+}
+
+
+// -----------------------------------------------
+// preloader
+// -----------------------------------------------
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    transition: opacity .5s ease-in-out;
+    z-index: 9999;
+
+    .preloader-box{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-color);
+        border-radius: 50%;
+        // box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        padding: 5px 5px;
+
+        .preloader-circle{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: spin 1s linear infinite;
+
+            @keyframes spin {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+          }
+
+             .preloader-text{
+                // margin-top: 10px;
+                font-size: .6rem;
+                font-family: var(--pff);
+                color: var(--text-primary);
+                font-weight: 900;
+                animation: fadeRotate 1.5s infinite ease-in-out;
+
+                @keyframes fadeRotate {
+                    0%{
+                        opacity: 1;
+                        transform: rotate(0deg);
+                    }
+                    50%{
+                        opacity: .5;
+                        transform: rotate(5deg);
+                    }
+                    100%{
+                        opacity: 1;
+                        transform: rotate(0deg);
+                    }
+                }
+         
+            }
+        }
 }
 
 
