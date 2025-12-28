@@ -1,0 +1,62 @@
+<section class="case-project">
+  <header>
+    <h1>{{ project.title }}</h1>
+    <p class="summary">{{ project.summary }}</p>
+
+    <div class="links">
+      <a *ngIf="project.liveDemo" [href]="project.liveDemo" target="_blank">Live Demo</a>
+      <a *ngIf="project.github" [href]="project.github" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p>{{ project.overview }}</p>
+  </section>
+
+  <section>
+    <h2>Problem</h2>
+    <p>{{ project.problem }}</p>
+  </section>
+
+  <section>
+    <h2>Solution</h2>
+    <p>{{ project.solution }}</p>
+  </section>
+
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li *ngFor="let f of project.features">{{ f }}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Architecture & Design</h2>
+    <ul>
+      <li *ngFor="let a of project.architecture">{{ a }}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <div class="stack">
+      <span *ngFor="let tech of project.techStack">{{ tech }}</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Challenges & Solutions</h2>
+    <div class="challenge" *ngFor="let c of project.challenges">
+      <strong>{{ c.problem }}</strong>
+      <p>{{ c.solution }}</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Outcome</h2>
+    <ul>
+      <li *ngFor="let o of project.outcomes">{{ o }}</li>
+    </ul>
+  </section>
+</section>

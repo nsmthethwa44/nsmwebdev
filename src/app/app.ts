@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ScrollTop } from "./components/scroll-top/scroll-top";
-import { Home } from "./pages/home/home";
-import { Header } from "./components/header/header";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ScrollTop, Home, Header],
+  imports: [RouterOutlet, ScrollTop],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
