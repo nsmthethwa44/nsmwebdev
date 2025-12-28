@@ -275,7 +275,7 @@ span{
         font-size: 1.5rem;
         cursor: pointer;
         display: flex;
-        color: var(--primary-color) !important;
+        color: var(--text-primary) !important;
         align-items: center;
         justify-content: center;
         position: relative;
@@ -544,7 +544,7 @@ span{
         i{
             width: 3rem;
             height: 3rem;
-            background: var(--background);
+            background: var(--primary-color);
             border-radius: var(--border-radius);
             display: flex;
             align-items: center;
