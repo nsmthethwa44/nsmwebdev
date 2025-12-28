@@ -75,7 +75,7 @@
   
  
     --pff: --text;
-    --pfs: 1rem;
+    --pfs: .8rem;
 
     --h3fs: 1rem;
     --h3ff:  --h3heading;
@@ -2258,6 +2258,7 @@ span{
     gap: 1rem;
     margin-bottom: 1rem;
     padding-top: 1rem;
+    display: none;
 }
 
 .stacks .container .content {
