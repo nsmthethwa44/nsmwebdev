@@ -34,7 +34,7 @@ export class App {
       }else if (event instanceof NavigationEnd || event instanceof NavigationCancel || event instanceof NavigationError) {
         setTimeout(() =>{
           this.isLoading = false;
-        }, 5000)
+        }, 3000)
       }
     });
   }
