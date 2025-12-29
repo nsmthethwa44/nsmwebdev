@@ -3,10 +3,11 @@ import { Project } from '../../model/projectModel';
 import { ProjectService } from '../../services/project-service';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { IconMarquee } from "../../components/icon-marquee/icon-marquee";
 
 @Component({
   selector: 'app-project-details',
-  imports: [CommonModule],
+  imports: [CommonModule, IconMarquee],
   templateUrl: './project-details.html',
   styleUrl: './project-details.scss',
 })

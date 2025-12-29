@@ -526,9 +526,9 @@ span{
             }
         }
     }
+}
 
-
-    .contact-icons{
+  .contact-icons{
         position: absolute;
         top: 0;
         right: 0;
@@ -587,7 +587,6 @@ span{
                         box-shadow: 20px  0 var(--white);
                     }
     }
-}
 
 
 // -----------------------------------------------
@@ -694,6 +693,8 @@ span{
                  }
             }
         }
+    }
+}
 
 .tech-marquee {
   overflow: hidden;
@@ -742,12 +743,6 @@ span{
     transform: translateX(-50%);
   }
 }
-}
-
-
-
-    
-    }
 }
 
 
@@ -1415,6 +1410,7 @@ span{
                                 font-family: var(--pff);
                                 font-size: var(--pfs);
                                 font-weight: 600;
+                                font-style: italic;
                             }
                       
                         }
@@ -2152,6 +2148,204 @@ span{
 }
 
 
+
+
+
+// -----------------------------------------------
+// project page
+// -----------------------------------------------
+.banner{
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    background: red;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .bg-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+
+        .img-box{
+            object-fit: fill;
+        }
+    }
+
+    .text-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,0.1);
+
+        .container{
+            .content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .buttons{
+                     display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .btn{
+                        i{
+                            color: var(--text-primary);
+                        }
+                        &.gitHub{
+                            color: var(--color);
+                            background: var(--text-primary);
+
+                            i{
+                                color: var(--color);
+                            }
+
+                            &:hover{
+                                color: var(--color);
+                                background: var(--accent-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.project-info{
+    .container{
+        padding: 2rem 2rem;
+        background: var(--background);
+        border-radius: 20px;
+
+        .container-box{
+            position: relative;
+            padding: 2rem 2rem;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--box-shadow);
+            margin-top: -200px;
+            z-index: 2;
+
+            .box{
+                padding: 2rem 2rem;
+                border-radius: 20px;
+                border: var(--border);
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                ul{
+                    li{
+                        color: var(--text-secondary);
+                        font-size: var(--pfs);
+                        font-family: var(--pff);
+                    }
+                }
+
+                .project-summary{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+
+                    h1{
+                        color: var(--text-primary);
+                        font-family: var(--h2ff);
+                        font-size: clamp(1.5rem, .5rem + 5vw, 1.5rem);
+                    }
+                }
+
+                .tech-stack{
+                    .stack{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        flex-wrap: wrap;
+                        margin-top: .5rem;
+
+                        span{
+                            background: var(--background);
+                            padding: .7rem 1rem;
+                            color: var(--text-secondary);
+                            font-size: var(--pfs);
+                            font-family: var(--pff);
+                        }
+                    }
+                }
+
+                .challenges{
+                    .challenge{
+                        span{
+                            font-style: italic;
+                            font-family: var(--pff);
+                            font-size: var(--pfs);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .featured-img{
+        margin-top: 2rem;
+
+        .container{
+            padding:0;
+            background: var(--white);
+            border-radius: 0;
+
+            .feature-box{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+
+                .box{
+                    width: 100%;
+                    overflow: hidden;
+                        border-radius: 20px;
+
+                        &:hover{
+                            .box-img{
+                                .img-box{
+                                    transform: scale(1.2) rotate(-10deg);
+                                }
+                            }
+                        }
+
+                    .box-img{
+                        width: 100%;
+                        height: 300px;
+                        overflow: hidden;
+                        border-radius: 20px;
+
+                        .img-box{
+                        object-fit: fill;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 // -----------------------------------------------
 // small devices 
 // -----------------------------------------------
@@ -2356,6 +2550,23 @@ span{
 }
 .services .container .content .container-box .box {
     padding: 3rem 1rem;
+}
+
+.project-info .container .container-box {
+    padding: 2rem 1rem;
+    margin-top: -150px;
+}
+
+.project-info .container .container-box .box {
+    padding: 1rem 1rem;
+}
+
+.project-info .container .container-box .box .tech-stack .stack {
+    gap: .5rem;
+}
+
+.project-info .container {
+    padding: 2rem 1rem;
 }
 }
 

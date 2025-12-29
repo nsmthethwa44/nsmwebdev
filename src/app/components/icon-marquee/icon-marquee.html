@@ -1,0 +1,48 @@
+<div class="tech-marquee">
+        <div class="marquee-track">
+            <div class="marquee-item">
+            <img src="assets/img/angularjs_30px.png" />
+            <span>Angular · Scalable UIs</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/c_sharp_logo_2_30px.png" />
+            <span>C# · Business Logic</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/Framework_30px.png" />
+            <span>.NET · Clean APIs</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/sql_30px.png" />
+            <span>SQL · Data Integrity</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/typescript_30px.png" />
+            <span>TypeScript · Predictable State</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/sass_avatar_30px.png" />
+            <span>SCSS · Design Systems</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/github_30px.png" />
+            <span>GitHub · CI/CD</span>
+            </div>
+
+            <div class="marquee-item">
+            <img src="assets/img/cloud_function_30px.png" />
+            <span>Cloud · Deployments</span>
+            </div>
+
+            <!-- duplicate set for seamless loop -->
+            <ng-container *ngFor="let _ of [1]">
+                 <div class="marquee-item" *ngFor="let item of [1,2,3,4,5,6,7,8]"></div>
+            </ng-container>
+        </div>
+</div>

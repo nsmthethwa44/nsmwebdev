@@ -13,6 +13,12 @@ export class ProjectService {
     overview: 'CartFlow was built to simulate a real-world online store with admin management, user carts, and order processing.',
     problem:  'E-commerce systems often suffer from tightly coupled APIs, fragile cart logic, and unmaintainable growth.',
     solution: 'Designed a clear separation between API layers, business rules, and frontend state management.',
+   images: [
+          "assets/img/cartflow-1.png",
+          "assets/img/cartflow-2.png",
+          "assets/img/cartflow-3.png",
+        "assets/img/cartflow-4.png",
+       ],
     roles: ['Admin', 'Customer'],
     features: [
       'Product and category management',
@@ -44,8 +50,8 @@ export class ProjectService {
       'Readable and extendable codebase',
       'Consistent deployment via CI/CD'
     ],
-    liveDemo: 'https://example.com',
-    github: 'https://github.com/example'
+    liveDemo: 'https://cartflowsystem.netlify.app/',
+    github: 'https://github.com/nsmthethwa44/CartFlow_Ecommerce_System-Angular-ASP.NET-Core-SQL-Server'
   },
       {
     slug: 'real-estate-system',
@@ -55,6 +61,12 @@ export class ProjectService {
     overview: 'The system was designed to handle real-world real estate workflows including listing approvals, offer tracking, and deal lifecycle management.',
     problem:'Most real estate platforms fail due to tightly coupled business logic, poor role separation, and fragile approval workflows.',
     solution: 'Implemented a layered architecture with explicit role-based flows, isolating business logic from data access and UI concerns.',
+     images: [
+          "assets/img/estateflow-1.png",
+          "assets/img/estateflow-2.png",
+          "assets/img/estateflow-3.png",
+        "assets/img/estateflow-4.png",
+       ],
     roles: ['Admin', 'Seller', 'Buyer'],
     features: [
       'Role-based dashboards',
@@ -91,8 +103,8 @@ export class ProjectService {
       'Clean and maintainable backend',
       'Production-ready deployment pipeline'
     ],
-    liveDemo: 'https://example.com',
-    github: 'https://github.com/example'
+    liveDemo: 'https://estateflowsystem.netlify.app/',
+    github: 'https://github.com/nsmthethwa44/EstateFlowSystem'
   },
   {
       slug: 'healthcare-appointment-booking-system',
@@ -112,6 +124,12 @@ export class ProjectService {
         'Admins manage users, roles, and reports',
         'JWT-secured APIs with strict role-based access control'
       ],
+       images: [
+          "assets/img/hcs-1.png",
+          "assets/img/hcs-2.png",
+          "assets/img/hcs-3.png",
+        "assets/img/hcs-4.png",
+       ],
       keyFeatures: [
         'Role-based dashboards (Patient, Doctor, Admin)',
         'Secure authentication using JWT',
@@ -151,8 +169,8 @@ export class ProjectService {
         'Maintainable codebase aligned with SOLID principles',
         'Ready for future extensions (notifications, payments, telehealth)'
       ],
-      iveDemo: 'https://example.com',
-    github: 'https://github.com/example'
+      liveDemo: 'https://happy-ground-0a36d730f.3.azurestaticapps.net/',
+    github: 'https://github.com/nsmthethwa44/HCBS-Angular-ASP.NET-Core-SQL-Server'
     },
      {
       slug: 'car-auction-system',
@@ -172,6 +190,12 @@ export class ProjectService {
         'Business rules enforced centrally within the service layer',
         'JWT authentication and RBAC ensure only permitted actions are allowed'
       ],
+       images: [
+          "assets/img/cas-1.png",
+          "assets/img/cas-2.png",
+          "assets/img/cas-3.png",
+          "assets/img/cas-4.png",
+    ],
       keyFeatures: [
         'Role-based authentication and authorization',
         'Vehicle listing and auction creation',
@@ -211,8 +235,8 @@ export class ProjectService {
         'Maintainable and scalable backend architecture',
         'Foundation ready for payments, notifications, and admin monitoring'
       ],
-     iveDemo: 'https://example.com',
-    github: 'https://github.com/example'
+     liveDemo: 'https://carauctionsystem.netlify.app/',
+    github: 'https://github.com/nsmthethwa44/CAS-Angular-ASP.NET-Core-SQL-Server' ,
     },
 
 

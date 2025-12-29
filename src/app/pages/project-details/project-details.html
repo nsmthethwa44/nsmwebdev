@@ -1,62 +1,104 @@
-<section class="case-project">
-  <header>
-    <h1>{{ project.title }}</h1>
-    <p class="summary">{{ project.summary }}</p>
+<section class="wrapper">
+  <div class="section banner">
+      <div class="bg-img"><img src={{project.imgUrl}} alt={{project.title}} class="img-box"></div>
+      <div class="text-box">
+        <div class="container">
+          <div class="content">
+            <div class="buttons">
+              <a *ngIf="project.liveDemo" [href]="project.liveDemo" target="_blank"><button class="btn">Live Demo<i class="fa-solid fa-link"></i></button></a>
+              <a *ngIf="project.github" [href]="project.github" target="_blank"><button class="btn gitHub">GitHub<i class="fa-brands fa-github"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="links">
-      <a *ngIf="project.liveDemo" [href]="project.liveDemo" target="_blank">Live Demo</a>
-      <a *ngIf="project.github" [href]="project.github" target="_blank">GitHub</a>
-    </div>
-  </header>
-
-  <section>
-    <h2>Overview</h2>
-    <p>{{ project.overview }}</p>
-  </section>
-
-  <section>
-    <h2>Problem</h2>
-    <p>{{ project.problem }}</p>
-  </section>
-
-  <section>
-    <h2>Solution</h2>
-    <p>{{ project.solution }}</p>
-  </section>
-
-  <section>
-    <h2>Key Features</h2>
-    <ul>
-      <li *ngFor="let f of project.features">{{ f }}</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Architecture & Design</h2>
-    <ul>
-      <li *ngFor="let a of project.architecture">{{ a }}</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Tech Stack</h2>
-    <div class="stack">
-      <span *ngFor="let tech of project.techStack">{{ tech }}</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Challenges & Solutions</h2>
-    <div class="challenge" *ngFor="let c of project.challenges">
-      <strong>{{ c.problem }}</strong>
-      <p>{{ c.solution }}</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Outcome</h2>
-    <ul>
-      <li *ngFor="let o of project.outcomes">{{ o }}</li>
-    </ul>
-  </section>
+         <div class="contact-icons">
+            <a href="tel:+0795654665"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:nkululekosm44&commat;gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+  </div>
 </section>
+
+<div class="section project-info section">
+  <div class="container">
+    <div class="container-box">
+      <div class="box">
+          <div class="project-summary">
+              <h1>{{ project.title }}</h1>
+              <h3 class="summary">{{ project.summary }}</h3>
+              <div class="divider"></div>
+          </div>
+
+          <div class="overview">
+            <h3>Overview</h3>
+              <p>{{ project.overview }}</p>
+          </div>
+
+          <div class="problem">
+            <h3>Problem</h3>
+              <p>{{ project.problem }}</p>
+          </div>
+
+          <div class="solution">
+            <h3>Solution</h3>
+             <p>{{ project.solution }}</p>
+          </div>
+
+          <div class="features">
+              <h3>Key Features</h3>
+                  <ul>
+                    <li *ngFor="let f of project.features">- {{ f }}</li>
+                  </ul>
+          </div>
+
+          <div class="design">
+              <h3>Architecture & Design</h3>
+                  <ul>
+                    <li *ngFor="let a of project.architecture">- {{ a }}</li>
+                  </ul>
+          </div>
+
+            <div class="tech-stack">
+              <h3>Tech Stack</h3>
+                  <div class="stack">
+                    <span *ngFor="let tech of project.techStack">{{ tech }}</span>
+                  </div>
+            </div>
+
+            <div class="challenges">
+                <h3>Challenges & Solutions</h3>
+                    <div class="challenge" *ngFor="let c of project.challenges">
+                      <span>{{ c.problem }}</span>
+                      <p>{{ c.solution }}</p>
+                    </div>
+            </div>
+
+            <div class="outcomes">
+            <h3>Outcome</h3>
+                <ul>
+                  <li *ngFor="let o of project.outcomes">- {{ o }}</li>
+                </ul>
+            </div>
+
+
+      </div>
+    </div>
+
+    <app-icon-marquee></app-icon-marquee>
+  </div>
+<div class="featured-img">
+    <div class="container">
+      <div class="feature-box">
+        <div class="box" *ngFor="let item of project.images">
+          <div class="box-img"><img src={{item}} alt={{project.title}} class="img-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+    
