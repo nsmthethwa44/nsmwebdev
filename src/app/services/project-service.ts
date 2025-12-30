@@ -240,7 +240,7 @@ export class ProjectService {
     },
 {
   "slug": "taskflow-task-manager",
-  "title": "TaskFlow – Task Manager Dashboard (Angular, ASP.NET Core, SQL Server)",
+  "title": "TaskFlow – Task Management - Angular, ASP.NET Core, SQL Server",
   "imgUrl": "assets/img/taskflow-task-manager.png",
   "summary": "A full-stack task management system that helps users organize tasks by categories, track progress, and visualize productivity through dashboards.",
   "overview": "TaskFlow was built to model a real-world personal productivity system with structured task creation, categorization, and data-driven dashboards backed by a clean backend architecture.",
