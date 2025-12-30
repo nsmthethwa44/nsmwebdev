@@ -238,51 +238,59 @@ export class ProjectService {
      liveDemo: 'https://carauctionsystem.netlify.app/',
     github: 'https://github.com/nsmthethwa44/CAS-Angular-ASP.NET-Core-SQL-Server' ,
     },
-
-
-
-// {
-//   id: 2,
-//   title: 'Healthcare Appointment Booking System – Angular, ASP.NET Core, SQL Server',
-//   category: "Healthcare Management",
-//   shortDesc: 'A full-stack web application for booking and managing healthcare appointments, built with ASP.NET Core Web API, Angular, and SQL Server.',
-//   imgUrl: 'assets/img/HealthCare_Appointment_System – Angular  ASP.NET Core  SQL Server.png',
-//   desc: 'This healthcare platform allows patients to book appointments, doctors to manage schedules, and administrators to oversee users and reporting. Built with ASP.NET Core Web API, Angular, and SQL Server, it applies SOLID principles, JWT authentication, and role-based access control (RBAC) to ensure scalability, maintainability, and secure role-specific actions. The system improves transparency, reduces scheduling conflicts, and streamlines healthcare communication in a centralized, digital platform.',
-//   liveDemo: "https://happy-ground-0a36d730f.3.azurestaticapps.net/",
-//   images: {
-//           img1: "assets/img/hcs-1.png",
-//           img2: "assets/img/hcs-2.png",
-//           img3: "assets/img/hcs-3.png",
-//           img4: "assets/img/hcs-4.png",
-//       },
-//   gitHubLink: "https://github.com/nsmthethwa44/HCBS-Angular-ASP.NET-Core-SQL-Server",
-//   vidUrl: "https://youtu.be/GueNLZ4QtII",
-//   theProblem: "Healthcare appointment booking often relies on outdated or manual methods, leading to double bookings, poor communication, and wasted time for both patients and providers.",
-//   theSolution: "The Healthcare Appointment Booking System digitizes scheduling by allowing patients to book online, doctors to manage availability, and administrators to oversee the platform with secure, role-based access.",
-//   theBenefits: "Reduces scheduling conflicts, improves communication, and provides a secure, scalable, and transparent platform for managing appointments across patients, doctors, and administrators."
-// },
-//  {
-//   id: 3,
-//   title: 'Car Auction System – Angular, ASP.NET Core, SQL Server',
-//    category: "Car Management",
-//   shortDesc: 'A full-stack car auction platform that enables car owners to list vehicles and bidders to place and track real-time bids using Angular, ASP.NET Core, and SQL Server.',
-//   imgUrl: 'assets/img/Car_Auction_System  – Angular  ASP.NET Core  SQL Server.png',
-//   desc: 'A complete full-stack web application built with ASP.NET Core Web API, Angular, and SQL Server that provides a platform for listing, bidding, and managing car auctions in real-time. The system follows clean architecture and SOLID principles to maintain separation of concerns across services, repositories, and controllers. Secure JWT authentication and role-based access control (RBAC) ensure that car owners, bidders, and administrators interact with the platform according to their permissions. This structured architecture ensures scalability, maintainability, and clarity in user workflows.',
-//   liveDemo: 'https://carauctionsystem.netlify.app/',
-//    images: {
-//           img1: "assets/img/cas-1.png",
-//           img2: "assets/img/cas-2.png",
-//           img3: "assets/img/cas-3.png",
-//           img4: "assets/img/cas-4.png",
-//       },
-//   gitHubLink: 'https://github.com/nsmthethwa44/CAS-Angular-ASP.NET-Core-SQL-Server',
-//   vidUrl: 'https://youtu.be/cImsZSIdlCM',
-//   theProblem: 'Traditional vehicle auction processes are often inefficient, opaque, and require in-person attendance. Buyers may not have clear visibility on car details, and sellers cannot easily track bidding activity or manage car listings. This results in limited participation, slower sales cycles, and difficulty maintaining transparent pricing.',
-//   theSolution: 'The Car Auction System digitizes the auction process by allowing car owners to register and list vehicles while bidders can browse available cars and place bids in real-time. The system manages the entire bidding lifecycle, ensuring accuracy, transparency, and efficiency. Administrators can manage users, listings, and auction settings from a centralized dashboard.',
-//   theBenefits: 'Buyers get transparent, real-time updates on bidding status and vehicle details. Sellers gain wider reach and better control over their listings. Administrators benefit from structured oversight, improved security, and reduced manual workload. The system modernizes the auction experience with improved accessibility, accountability, and data-driven decision-making.'
-// },
-
-
+{
+  "slug": "taskflow-task-manager",
+  "title": "TaskFlow – Task Manager Dashboard (Angular, ASP.NET Core, SQL Server)",
+  "imgUrl": "assets/img/taskflow-task-manager.png",
+  "summary": "A full-stack task management system that helps users organize tasks by categories, track progress, and visualize productivity through dashboards.",
+  "overview": "TaskFlow was built to model a real-world personal productivity system with structured task creation, categorization, and data-driven dashboards backed by a clean backend architecture.",
+  "problem": "Many task managers lack clear structure, become cluttered over time, and provide little insight into progress or workload distribution.",
+  "solution": "Designed a category-driven task system with a dashboard-first experience, backed by a layered API architecture that cleanly separates business logic from data access and UI concerns.",
+  "images": [
+    "assets/img/taskflow-1.png",
+    "assets/img/taskflow-2.png",
+    "assets/img/taskflow-3.png",
+    "assets/img/taskflow-4.png"
+  ],
+  "roles": ["User"],
+  "features": [
+    "Task creation and management",
+    "Category-based task organization",
+    "Dashboard with bar, pie, and sparkline statistics",
+    "Progress and completion tracking"
+  ],
+  "architecture": [
+    "Controller → Service → Repository pattern",
+    "Centralized business logic layer",
+    "DTO-driven REST APIs",
+    "Frontend-backend separation"
+  ],
+  "techStack": [
+    "Angular",
+    "SCSS",
+    "ASP.NET Core Web API",
+    "SQL Server",
+    "RESTful APIs",
+    "GitHub"
+  ],
+  "challenges": [
+    {
+      "problem": "Handling empty dashboards and charts for new users",
+      "solution": "Implemented safe empty-state logic with conditional chart rendering and placeholder UI"
+    },
+    {
+      "problem": "Avoiding tightly coupled task and category logic",
+      "solution": "Separated responsibilities using services and repositories with clear boundaries"
+    }
+  ],
+  "outcomes": [
+    "Clear and intuitive task organization",
+    "Stable and maintainable backend structure",
+    "Dashboard that scales as user data grows"
+  ],
+  "liveDemo": "https://taskflowsystem.netlify.app/",
+  "github": "https://github.com/nsmthethwa44/TaskFlow_Task_Manager-Angular-ASP.NET-Core-SQL-Server"
+},
 
   ]
 
