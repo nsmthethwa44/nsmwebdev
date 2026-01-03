@@ -1113,9 +1113,12 @@ span{
                 filter: var(--filter);
                 overflow: hidden;
                 border: var(--border);
-                 height: 100%;
+                 min-height: 100%;
                  transition: var(--transition);
                  background: var(--white);
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
 
                  &:hover{
                     transform: translateY(-4px);
@@ -1136,7 +1139,7 @@ span{
 
                 .box-img{
                     width: 100%;
-                    height: 250px;
+                    height: 300px;
                     overflow: hidden;
                     position: relative;
 
@@ -1207,23 +1210,29 @@ span{
                 .text-box{
                     padding: 1rem 1rem;
                     display: flex;
+                    overflow: hidden;
                     flex-direction: column;
                     gap: .5rem;
+                    height: 100%;
+                    flex: 1;
 
-                    .hash-tags{
-                        display: flex;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        gap: .5rem;
+                  .tech{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: auto;
 
-                        li{
-                            font-size: var(--pfs);
-                            color: var(--primary-color);
-                            font-family: var(--pff);
-                            font-weight: 600;
-                            line-height: 1;
-                        }
+                    span{
+                        // padding: .2rem 1rem;
+                        // border-radius: 30px;
+                        // color: var(--text-primary);
+                        font-size: var(--pfs);
+                        font-family: var(--pff);
+                        font-weight: 600;
+                        font-style: italic;
+                        // background: var(--primary-color);
                     }
+                  }
                 }
             }
             }

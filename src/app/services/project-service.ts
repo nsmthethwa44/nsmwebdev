@@ -7,7 +7,7 @@ export class ProjectService {
     projects = [
       {
     slug: 'cartflow-ecommerce',
-    title: 'CartFlow E-Commerce Platform – Angular, ASP.NET Core, SQL Server',
+    title: 'CartFlow - e-Commerce Platform',
     imgUrl: 'assets/img/CartFlow-Ecommerce_System  – Angular  ASP.NET Core  SQL Server.png',
     summary: 'A full-stack e-commerce system handling products, categories, carts, and checkout flows with clean architecture.',
     overview: 'CartFlow was built to simulate a real-world online store with admin management, user carts, and order processing.',
@@ -55,7 +55,7 @@ export class ProjectService {
   },
       {
     slug: 'real-estate-system',
-    title: 'Real Estate Transaction Management System – Angular, ASP.NET Core, SQL Server',
+    title: 'Real Estate Transaction Management System',
     imgUrl: 'assets/img/EstateFlow System – Angular, ASP.NET Core, SQL Server.png',
     summary: 'A role-based platform enabling admins, sellers, and buyers to manage properties, offers, and transactions through structured workflows.',
     overview: 'The system was designed to handle real-world real estate workflows including listing approvals, offer tracking, and deal lifecycle management.',
@@ -108,7 +108,7 @@ export class ProjectService {
   },
   {
       slug: 'healthcare-appointment-booking-system',
-      title: 'Healthcare Appointment Booking System – Angular, ASP.NET Core, SQL Server',
+      title: 'Healthcare Appointment Booking System',
        imgUrl: 'assets/img/HealthCare_Appointment_System – Angular  ASP.NET Core  SQL Server.png',
       summary: 'A role-based healthcare scheduling platform that streamlines appointment booking for patients, schedule management for doctors, and administrative oversight through a clean, secure architecture.',
       overview: 'This project addresses inefficiencies in traditional healthcare scheduling systems that rely on phone calls, spreadsheets, or disconnected tools. The system provides a centralized, role-aware platform that is predictable, secure, and extensible.',
@@ -174,7 +174,7 @@ export class ProjectService {
     },
      {
       slug: 'car-auction-system',
-      title: 'Car Auction System – Angular, ASP.NET Core, SQL Server',
+      title: 'Car Auction System',
        imgUrl: 'assets/img/Car_Auction_System  – Angular  ASP.NET Core  SQL Server.png',
       summary: 'A role-based car auction platform that enables vehicle owners to host auctions and bidders to place and track bids through a secure, well-structured web application.',
       overview: 'This project models a real-world auction system where timing, bid validation, and access control are critical. The system enforces strict business rules to prevent invalid bidding while maintaining predictable auction behavior.',
@@ -240,7 +240,7 @@ export class ProjectService {
     },
 {
   "slug": "taskflow-task-manager",
-  "title": "TaskFlow – Task Management - Angular, ASP.NET Core, SQL Server",
+  "title": "TaskFlow – Task Management",
   "imgUrl": "assets/img/taskflow-task-manager.png",
   "summary": "A full-stack task management system that helps users organize tasks by categories, track progress, and visualize productivity through dashboards.",
   "overview": "TaskFlow was built to model a real-world personal productivity system with structured task creation, categorization, and data-driven dashboards backed by a clean backend architecture.",
